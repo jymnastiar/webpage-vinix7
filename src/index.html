@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tri-Ace Booking</title>
+    <link rel="icon" type="image/png" href="/src/img/logo.svg"/>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="w-full min-h-screen bg-white inline-flex justify-center items-center font-main">
+    <div class="max-w-360 flex flex-col justify-center items-center md:flex-row">
+      <section class="flex-1 h-auto max-w-130 md:max-w-180">
+        <img src="/src/img/background-img.png" />
+      </section>
+
+      <section class="flex-1 px-10 py-10 inline-flex flex-col justify-center items-start gap-14">
+
+        <header class="self-stretch inline-flex justify-center items-center gap-5 flex-wrap content-center">
+          <div class="w-10 h-10 flex justify-center items-center">
+            <img src="/src/img/logo.svg" />
+          </div>
+          <h1 class="justify-start text-center text-color-text-title text-[40px] font-bold">TRI-ACE BOOKING</h1>
+        </header>
+
+        <section class="self-stretch flex flex-col justify-start items-start gap-9">
+          <section class="self-stretch flex flex-col justify-start items-start gap-2.5">
+            <h2 class="justify-start text-color-text-title text-3xl font-semibold">Halo!</h2>
+            <h3 class="justify-start text-color-text-title text-lg font-medium">Selamat datang kembali! Kami senang melihat Anda lagi.</h3>
+          </section>
+        
+          <form class="self-stretch flex flex-col items-start gap-3.5">
+            <div class="self-stretch flex flex-col items-start gap-1.25 cursor-pointer">
+              <label for="email" class="justify-start text-color-text-title text-sm font-normal leading-6">
+                Alamat Email
+              </label>
+              <input id="email" type="email" name="email" placeholder="Masukan Alamat Email Anda" class="self-stretch px-4 py-2.5 bg-color-button-secondary rounded-md border-b-2 border-color-text-caption text-color-text-body text-sm font-normal leading-6 placeholder:opacity-50 outline-none"
+              />
+            </div>
+        
+            <div class="self-stretch flex flex-col justify-start items-start gap-1.25 cursor-pointer">
+              <label for="password" class="justify-start text-color-text-title text-sm font-normal leading-6">
+                Kata Sandi
+              </label>
+              <input id="password" type="password" name="password" placeholder="Masukan Kata Sandi Anda" class="self-stretch px-4 py-2.5 bg-color-button-secondary rounded-md border-b-2 border-color-text-caption text-color-text-title text-sm font-normal leading-6 placeholder:opacity-50 outline-none"
+              />
+            </div>
+        
+            <label data-type="uncheck" class="inline-flex justify-start items-center gap-2 cursor-pointer">
+              <input type="checkbox" name="remember" class="w-4 h-4 rounded-sm border border-color-button-primary accent-color-button-primary"
+              />
+              <span class="justify-start text-color-text-title text-sm font-normal leading-5">Ingatkan saya</span>
+            </label>
+            
+            <section class="self-stretch mt-5 inline-flex flex-col justify-start items-start gap-3 overflow-hidden">
+              <button type="submit" class="self-stretch h-12 px-3 py-4 bg-color-button-primary rounded-md flex justify-center items-center cursor-pointer hover:">
+                <span class="text-color-button-text text-base font-medium leading-4 tracking-wide">Masuk</span>
+              </button>
+            
+              <a href="#" class="self-stretch h-12 px-3 py-4 rounded-md outline-2 -outline-offset-2 outline-color-button-primary flex justify-center items-center">
+                <span class="text-color-button-primary text-base font-medium leading-4 tracking-wide">Belum Punya Akun? Daftar!</span>
+              </a>
+            </section>
+          </form>
+
+        </section>
+
+        <hr class="self-stretch border-t border-color-border-base" />
+
+        <footer class="self-stretch flex flex-col justify-start items-start gap-10">
+          <div class="self-stretch flex flex-wrap justify-start items-start gap-5">
+            <button class="flex-1 min-w-45 h-12 px-3 py-4 rounded-md outline-2 outline-offset-2 outline-color-button-primary flex justify-center items-center gap-2 cursor-pointer">
+              <img src="/src/img/icon-google.svg" alt="icon-google">
+              <p class="text-color-button-primary text-base font-medium leading-4 tracking-wide">Masuk Dengan Google</p>
+            </button>
+            
+            <button class="flex-1 min-w-45 h-12 px-3 py-4 rounded-md outline-2 outline-offset-2 outline-color-button-primary flex justify-center items-center gap-2 cursor-pointer">
+              <img src="/src/img/icon-apple.svg" alt="icon-apple">
+              <p class="text-color-button-primary text-base font-medium leading-4 tracking-wide">Masuk Dengan Apple</p>
+            </button>
+          </div>
+
+          <a href="#" class="justify-start text-color-text-body text-xs font-medium underline cursor-pointer">Lupa Kata Sandi?</a>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
